@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210322 17:59:51.895" rpa="false">
+<suite id="s1" name="E-Portal" source="C:\Users\Aya\git\testgit\E-Portal">
+<suite id="s1-s1" name="TestCases" source="C:\Users\Aya\git\testgit\E-Portal\TestCases">
+<suite id="s1-s1-s1" name="Main" source="C:\Users\Aya\git\testgit\E-Portal\TestCases\Main.robot">
+<test id="s1-s1-s1-t1" name="Run_project">
+<kw name="Open" library="Actions" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20210322 17:59:52.212" level="INFO">Opening browser 'firefox' to base url 'http://81.10.12.74:100'.</msg>
+<msg timestamp="20210322 17:59:52.213" level="INFO">Firefox driver log is always forced to to: C:\Users\Aya\git\testgit\E-Portal\geckodriver-3.log</msg>
+<status status="PASS" starttime="20210322 17:59:52.212" endtime="20210322 18:00:10.087"></status>
+</kw>
+<status status="PASS" starttime="20210322 17:59:52.211" endtime="20210322 18:00:10.087"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210322 18:00:13.090" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210322 18:00:10.088" endtime="20210322 18:00:13.090"></status>
+</kw>
+<kw name="Login" library="Loginpage">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210322 18:00:15.092" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210322 18:00:13.092" endtime="20210322 18:00:15.092"></status>
+</kw>
+<kw name="Enter user_data" library="Actions">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${User_name}</arg>
+<arg>${Mail}</arg>
+</arguments>
+<msg timestamp="20210322 18:00:15.094" level="INFO">Typing text 'rb2@rb.rb' into text field 'id:txt_username'.</msg>
+<status status="PASS" starttime="20210322 18:00:15.094" endtime="20210322 18:00:15.154"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Log_Password}</arg>
+<arg>${Pw}</arg>
+</arguments>
+<msg timestamp="20210322 18:00:15.155" level="INFO">Typing text 'Pw123456' into text field 'id:txt_password'.</msg>
+<status status="PASS" starttime="20210322 18:00:15.155" endtime="20210322 18:00:15.196"></status>
+</kw>
+<status status="PASS" starttime="20210322 18:00:15.093" endtime="20210322 18:00:15.197"></status>
+</kw>
+<kw name="Press login" library="Actions">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Login_btn}</arg>
+</arguments>
+<msg timestamp="20210322 18:00:15.198" level="INFO">Clicking element 'id:btn_login'.</msg>
+<status status="PASS" starttime="20210322 18:00:15.198" endtime="20210322 18:00:16.256"></status>
+</kw>
+<status status="PASS" starttime="20210322 18:00:15.197" endtime="20210322 18:00:16.256"></status>
+</kw>
+<status status="PASS" starttime="20210322 18:00:13.091" endtime="20210322 18:00:16.257"></status>
+</kw>
+<status status="PASS" starttime="20210322 17:59:52.210" endtime="20210322 18:00:16.258" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210322 17:59:51.959" endtime="20210322 18:00:16.260"></status>
+</suite>
+<status status="PASS" starttime="20210322 17:59:51.955" endtime="20210322 18:00:16.264"></status>
+</suite>
+<status status="PASS" starttime="20210322 17:59:51.930" endtime="20210322 18:00:16.266"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="E-Portal">E-Portal</stat>
+<stat pass="1" fail="0" id="s1-s1" name="TestCases">E-Portal.TestCases</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Main">E-Portal.TestCases.Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
